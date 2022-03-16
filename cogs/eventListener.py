@@ -13,8 +13,8 @@ class eventListener(commands.Cog):
     @commands.Cog.listener()
     async def on_member_join(self, member: discord.Member):
         em = discord.Embed(color=0x12d600, description=f"Thank you {member.mention}, you're the member number {len(list(member.guild.members))}!")
-        em.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
-        em.set_image(url=f"{member.avatar_url}")
+        em.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon.url}")
+        em.set_image(url=f"{member.avatar.url}")
         em.timestamp = datetime.datetime.utcnow()
         channel = self.bot.get_channel(940123097015681074)
 
@@ -26,8 +26,8 @@ class eventListener(commands.Cog):
     @commands.Cog.listener()
     async def on_member_remove(self, member: discord.Member):
         emLeft = discord.Embed(color=0x12d600, description=f"Recognised that a member called " + member.name + " left")
-        emLeft.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon_url}")
-        emLeft.set_image(url=f"{member.avatar_url}")
+        emLeft.set_footer(text=f"{member.guild}", icon_url=f"{member.guild.icon.url}")
+        emLeft.set_image(url=f"{member.avatar.url}")
         emLeft.timestamp = datetime.datetime.utcnow()
         channel = self.bot.get_channel(950991092835319878)
 
