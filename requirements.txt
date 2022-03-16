@@ -1,3 +1,4 @@
+py-cord==2.0.0b1
 dismusic
 PyNaCl
 google-api-python-client
