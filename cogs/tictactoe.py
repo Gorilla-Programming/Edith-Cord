@@ -71,9 +71,6 @@ class tictactoe(commands.Cog):
             await ctx.send(
                 "A game is already in progress! Finish it before starting a new one."
             )
-    @commands.command(name = 'hello')
-    async def hello(self,ctx):
-      await ctx.send("Please start a new game using the !tictactoe command.")
       
     
     @commands.command(name = 'place', aliases = ['mark','m'])

@@ -18,6 +18,7 @@ client.load_extension('cogs.eventListener')
 client.load_extension('cogs.util')
 client.load_extension('cogs.poll')
 client.load_extension('cogs.ticket')
+client.load_extension('cogs.badwords')
 client.load_extension('dismusic')
 
-client.run(os.environ['TOKEN'])
+client.run('OTUwNDU2NjIzNjQwNDkwMDA0.YiZLtQ.HfkGymnIR0XlX02Fszh2SBSmaIg')
