@@ -21,4 +21,4 @@ client.load_extension('cogs.ticket')
 client.load_extension('cogs.badwords')
 client.load_extension('dismusic')
 
-client.run('OTUwNDU2NjIzNjQwNDkwMDA0.YiZLtQ.HfkGymnIR0XlX02Fszh2SBSmaIg')
+client.run(os.environ['TOKEN'])
